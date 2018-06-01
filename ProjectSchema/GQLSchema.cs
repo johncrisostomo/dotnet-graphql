@@ -7,7 +7,7 @@ namespace ProjectSchema
     {
         public GQLSchema(IDependencyResolver resolver) : base(resolver)
         {
-            Query = resolver.Resolve<SchemaQuery>();
+            Query = resolver.Resolve<RootQuery>();
         }
     }
 }
