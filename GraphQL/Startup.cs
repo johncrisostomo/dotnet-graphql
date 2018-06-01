@@ -34,7 +34,7 @@ namespace dotnet_graphql
             services.AddSingleton<IDependencyResolver>(s => new FuncDependencyResolver(s.GetRequiredService));
             services.AddMvc();
             services.AddSingleton<SchemaData>();
-            services.AddSingleton<SchemaQuery>();
+            services.AddSingleton<RootQuery>();
             services.AddSingleton<UserType>();
             services.AddSingleton<ISchema, GQLSchema>();
 
