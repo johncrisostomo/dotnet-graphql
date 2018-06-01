@@ -1,4 +1,4 @@
-namespace Schema.Types
+namespace ProjectSchema.Types
 {
     public abstract class User
     {

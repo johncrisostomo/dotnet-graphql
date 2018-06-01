@@ -6,7 +6,7 @@ using GraphQL;
 using Schema.Types;
 
 // This is a fake data source, will be replaced by service / repo / EF / whatever
-namespace Schema
+namespace ProjectSchema
 {
     public class SchemaData
     {

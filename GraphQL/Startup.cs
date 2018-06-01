@@ -8,6 +8,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using ProjectSchema;
+using ProjectSchema.Types;
 
 namespace dotnet_graphql
 {
@@ -24,6 +26,10 @@ namespace dotnet_graphql
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.AddSingleton<SchemaData>();
+            services.AddSingleton<SchemaQuery>();
+            services.AddSingleton<UserType>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

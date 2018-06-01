@@ -2,7 +2,7 @@ using System;
 using GraphQL.Types;
 using Schema.Types;
 
-namespace Schema
+namespace ProjectSchema
 {
     public class SchemaQuery : ObjectGraphType<object>
     {

@@ -1,6 +1,6 @@
 using GraphQL.Types;
 
-namespace Schema.Types
+namespace ProjectSchema.Types
 {
     public class UserType : ObjectGraphType<User>
     {

@@ -21,7 +21,7 @@
   </ItemGroup>
 
     <ItemGroup>
-    <ProjectReference Include="..\Schema\Schema.csproj" />
+    <ProjectReference Include="..\ProjectSchema\ProjectSchema.csproj" />
   </ItemGroup>
 
 
