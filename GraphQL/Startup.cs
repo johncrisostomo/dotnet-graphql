@@ -31,10 +31,12 @@ namespace dotnet_graphql
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddSingleton<IDependencyResolver>(s => new FuncDependencyResolver(s.GetRequiredService));
             services.AddMvc();
             services.AddSingleton<SchemaData>();
             services.AddSingleton<SchemaQuery>();
             services.AddSingleton<UserType>();
+            services.AddSingleton<ISchema, GQLSchema>();
 
             services.AddGraphQLHttp();
         }
@@ -46,6 +48,10 @@ namespace dotnet_graphql
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseGraphQLHttp<ISchema>(new GraphQLHttpOptions());
+
+            app.UseGraphQLPlayground(new GraphQLPlaygroundOptions());
 
             app.UseMvc();
         }
