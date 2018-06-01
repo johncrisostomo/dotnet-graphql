@@ -13,7 +13,7 @@ namespace ProjectSchema
             Field<UserType>(
                 "user",
                  arguments: new QueryArguments(
-                    new QueryArgument<NonNullGraphType<StringGraphType>> { Name = "id", Description = "User's id" }),
+                    new QueryArgument<NonNullGraphType<IntGraphType>> { Name = "id", Description = "User's id" }),
                 resolve: context => data.GetUserByIdAsync(context.GetArgument<int>("id"))
             );
         }
