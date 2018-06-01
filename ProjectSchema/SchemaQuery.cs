@@ -1,6 +1,6 @@
 using System;
 using GraphQL.Types;
-using Schema.Types;
+using ProjectSchema.Types;
 
 namespace ProjectSchema
 {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using GraphQL;
-using Schema.Types;
+using ProjectSchema.Types;
 
 // This is a fake data source, will be replaced by service / repo / EF / whatever
 namespace ProjectSchema
