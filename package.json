@@ -6,7 +6,7 @@
     "license": "MIT",
     "scripts": {
         "start": "./run.sh",
-        "restore": "dotnet restore Example",
+        "restore": "dotnet restore GraphQL",
         "webpack": "webpack --progress"
     },
     "dependencies": {
